@@ -1,0 +1,20 @@
+# Thanapon Pruektan
+
+> Senior Full Stack Developer in Bangkok, Thailand. 8+ years building warehouse (WMS) and SAP-integrated logistics systems, enterprise e-commerce, Web3 payment gateways, real-time platforms and production AI. Open to senior roles and consulting.
+
+I build the systems that move goods, money and conversations: warehouse and SAP integration, Web3 payments, and production AI. Based in Bangkok, Thailand. Open to senior roles and consulting.
+
+## Pages
+- [Portfolio (English)](https://profile-theta-amber-40.vercel.app/): Profile, 15 project records with what was built, stack and capabilities.
+- [Portfolio (Thai)](https://profile-theta-amber-40.vercel.app/th/): Same content in Thai.
+- [Full text for LLMs](https://profile-theta-amber-40.vercel.app/llms-full.txt): Every record, bullet and skill in plain Markdown.
+- [Résumé PDF](https://profile-theta-amber-40.vercel.app/assets/Thanapon-Pruektan-Resume.pdf): Two-page résumé in English.
+
+## Contact
+- Email: thanapon.pruektan@gmail.com
+- LinkedIn: https://www.linkedin.com/in/thanapon-pruektan-19ba03146/
+- GitHub: https://github.com/tiekungsos
+
+## Notes
+- The demo order flow on the home page (DEMO-0001) is synthetic and is not client data.
+- The 3D crates on the page are illustrations; module names are intentionally not shown.

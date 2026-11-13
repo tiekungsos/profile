@@ -1,0 +1,199 @@
+# Thanapon Pruektan: Senior Full Stack Developer
+
+> I build the systems that move goods, money and conversations: warehouse and SAP integration, Web3 payments, and production AI. Based in Bangkok, Thailand. Open to senior roles and consulting.
+
+Contact: thanapon.pruektan@gmail.com | LinkedIn https://www.linkedin.com/in/thanapon-pruektan-19ba03146/ | GitHub https://github.com/tiekungsos
+Canonical page: https://profile-theta-amber-40.vercel.app/ (Thai: https://profile-theta-amber-40.vercel.app/th/)
+
+## Profile
+
+Senior Full Stack Developer with 8+ years of experience building business-critical systems across warehouse operations, SAP/ERP integration, enterprise e-commerce, Web3 payments, and AI-driven platforms. I work from architecture design through production launch: handheld scanning workflows, SAP-integrated logistics, real-time communication platforms, and AI avatar solutions for website chat and kiosk environments.
+
+## Key figures (each traces to a project record below)
+
+- Experience: 8+ years
+- Concurrent users: 100,000+ (record: Nakamoto Games)
+- Uptime: 99.9% (record: Nakamoto Games)
+- Crypto processed: $10M+ (record: Naka Wallet)
+- Events per month: 500+ (record: Host.tg Event Platform)
+- WMS domain modules: 20 (record: Bizstock WMS)
+- Average conversion lift: 200% (record: Magento E-Commerce Portfolio)
+
+## Records
+
+### 3W Business and Solutions: Specialist Tech Stack and Consultant (2026 to Present)
+
+Advising on technology stack and architecture, and delivering warehouse, logistics and manufacturing systems with SAP integration, handheld scanning and label printing.
+
+#### Thai Summit WMS
+
+Type: Warehouse · SAP. Stack: SAP, Handheld scanning, WMS.
+
+Picking Zone and Loading Zone workflows for a factory in South Africa, with a handheld scanning app and SAP integration.
+
+- Developed a WMS system for Thai Summit in South Africa, covering Picking Zone and Loading Zone workflows for factory logistics operations.
+- Built a handheld scanning application to manage warehouse movement, shipment preparation, and transportation activities in real time.
+- Integrated operational data with SAP to support accurate inventory movement, loading confirmation, and logistics tracking.
+
+#### Thai Summit Pricing Reconciliation (role: Full Stack Developer)
+
+Type: Reconciliation · SAP. Stack: SAP, Fastify, React, Vite, SQL Server, Windows Server.
+
+Matches prices across Epay documents, SAP and Marketing quotations in four stages, with line-level evidence. In production.
+
+- Designed and developed a reconciliation platform for Thai Summit that matches prices across Epay documents, SAP, and Marketing quotations in four reconciliation stages (GAP 1 to 4), with line-level evidence for every result.
+- Built importers for Epay, CSV, SAP, and XLSX sources and a domain matching engine using decimal arithmetic, with no rounding or zero-filling of missing values; processed import, reconcile, and export jobs through a SQL-backed queue.
+- Implemented deterministic exception tracking (reruns reopen or auto-resolve instead of duplicating), a review and approval workflow, and an immutable audit log.
+- Deployed to production on Windows Server with SQL Server, with PowerShell scripts for install, upgrade, backup, and rollback.
+
+#### Bizstock WMS (role: Architect and Lead Developer)
+
+Type: WMS platform. Stack: TypeScript, NestJS, React, Expo, PostgreSQL, SQL Server, PWA, ZPL.
+
+A full warehouse system as a TypeScript monorepo: admin web, offline scanner PWA, native Android app, 20 domain modules.
+
+- Designed and built a Warehouse Management System as a TypeScript monorepo (NestJS, React, Expo) covering the full inbound, putaway, pick, pack, and ship flow across 20 domain modules.
+- Delivered Admin Web, an offline-capable Scanner PWA, a native Android scanner app, a background worker, and a control plane for operations; supports both PostgreSQL and SQL Server.
+- Added ERP and commerce connectors (credential vault, circuit breaker, rate limiting, webhooks), label printing (Code128/QR, ZPL, ESC/POS), cycle counting, stock freeze and quality hold, returns/RMA, and an audit viewer with CSV export.
+
+#### Capsule Pack Management (role: Full Stack Developer)
+
+Type: Factory · Labels. Stack: Express, Prisma, SQL Server, React, PWA, ZPL, Android TWA, Docker, Nginx.
+
+Lots, weights and expiry dates from the plant's Excel sheets, Thai QR labels printed to Zebra, and an offline handheld app.
+
+- Built a factory system for a capsule manufacturer covering lot creation, weight and expiry calculations ported from the plant's Excel workbooks, QR label printing, handheld scanning, and stock tracking (Express, Prisma, SQL Server, React).
+- Generated Thai-language QR labels as ZPL graphics and sent them to Zebra printers over LAN; built an offline-first handheld PWA (IndexedDB queue with a retrying sync engine for unstable factory Wi-Fi) and packaged it as an Android APK (TWA).
+- Added role-based access with PIN login, audit logging of every change, scheduled database backups, Excel import and reports, and a Docker Compose / Nginx production deployment.
+
+### KOS Design: Backend Developer, Magento Specialist, DevOps (Jan 2021 to Present)
+
+Full-stack development across enterprise e-commerce, blockchain integration, real-time systems and AI platforms: technical architecture, production delivery and client-facing solutions.
+
+#### Nakamoto Games (role: Senior Backend and DevOps)
+
+Type: Web3 · Games. Stack: Web3, Real-time, DevOps.
+
+A blockchain-based gaming platform built with a 60-member agile team, serving 100,000+ concurrent users at 99.9% uptime.
+
+- Played a pivotal role in a 60-member agile team to develop a high-performance blockchain-based gaming platform.
+- Designed website, API backend, and database architecture; implemented real-time gameplay and chat functionality.
+- Delivered a scalable platform supporting 100,000+ concurrent users with 99.9% uptime.
+
+#### Naka Wallet (role: Senior Backend and DevOps)
+
+Type: Web3 · Payments. Stack: Web3, CI/CD, DevOps.
+
+A Web3 payment gateway across Binance, Polygon, Tron and TON that has processed $10M+ with zero security incidents.
+
+- Led development of a Web3 payment gateway supporting major blockchains including Binance, Polygon, Tron, and TON.
+- Designed scalable payment architecture, backend APIs, blockchain integrations, and CI/CD workflows.
+- Processed $10M+ in cryptocurrency transactions with zero security incidents.
+
+#### Host.tg Event Platform (role: Senior Backend and DevOps)
+
+Type: Events · Crypto. Stack: Web3, Real-time, DevOps.
+
+Event management with crypto payments, live updates and automated notifications, handling 500+ events a month.
+
+- Built an event management platform with cryptocurrency payment support, real-time event updates, and automated notifications.
+- Managed high-traffic usage for 500+ events monthly and 10,000+ concurrent users.
+
+#### AILEO AI Avatar Chat
+
+Type: AI · Avatar. Stack: AI, WebSocket, Python, Real-time.
+
+A real-time avatar that talks with customers through website chat and kiosks, plus single-photo 3D Gaussian avatar prototypes.
+
+- Developed a real-time AI avatar chat solution for aileo.co, enabling users to see and interact with a digital avatar through website chat and kiosk platforms.
+- Implemented real-time conversational interaction, visual avatar response behavior, and customer-facing communication workflows.
+- Prototyped single-photo 3D Gaussian Splatting head avatars (FLAME-bound) using the LAM and LAM_Audio2Expression models; built the pipeline CLI and an ARKit-to-FLAME expression converter to drive avatars from audio.
+
+#### AI Incident Analyzer
+
+Type: AI · DevOps. Stack: AI, GlitchTip, DevOps.
+
+Reads GlitchTip issues, summarizes root causes, ranks incidents and suggests fixes so developers respond faster.
+
+- Built an AI platform integrated with GlitchTip to analyze issues, summarize root causes, prioritize incidents, and recommend practical fixes for developers.
+- Automated issue-review workflows to reduce repetitive investigation, lower unresolved incidents, and shorten developer response time.
+
+#### Magento E-Commerce Portfolio (role: Magento Architect and Full Stack Developer)
+
+Type: E-commerce. Stack: Magento, PHP, Kerry Express.
+
+Stores for Modernair, Joli Snob, The Raya Curated Collection and SF Brandname, with a 200% average conversion lift.
+
+- Architected and developed Magento e-commerce solutions for Modernair, Joli Snob, The Raya Curated Collection, and SF Brandname.
+- Implemented custom modules, payment integrations, product configuration, mobile optimization, and logistics integration including Kerry Express tracking.
+- Delivered an average 200% improvement in conversion rates across projects.
+
+### Aware Corporation Limited: PHP Developer, Software Engineer (May 2018 to Dec 2020)
+
+Enterprise software across healthcare, retail, education and e-commerce: legacy system integration, modern web development and client delivery.
+
+#### WiL Alliance for CAMT
+
+Type: Education. Stack: PHP.
+
+Work-Integrated-Learning program management for 1,000+ students.
+
+- Enhanced visibility into Work-Integrated-Learning program management for 1,000+ students.
+
+#### goMed2Med
+
+Type: Healthcare. Stack: PHP.
+
+For Pharcomed B.V.: connecting 500+ professionals in the medical and pharmaceutical industry.
+
+- Connected stakeholders in the medical and pharmaceutical industry, facilitating connections between 500+ professionals.
+
+#### E-Commerce Projects
+
+Type: E-commerce. Stack: PHP, ERP.
+
+Chaisatien Retail, Zachys, Annebra and Siam TV Digital Store, with ERP integration, flash sales and maps.
+
+- Delivered Chaisatien Retail Solution, Zachys E-Commerce, Annebra E-Commerce, and Siam TV Digital Store with ERP integration, flash sales, and Google Maps integration.
+
+### Additional projects
+
+#### Thai CPD at Home (role: Full Stack Developer)
+
+Type: E-learning. Stack: PHP, CodeIgniter, MySQL, HLS.
+
+cpdacademy.co: a CodeIgniter e-learning platform, with Bunny.net adaptive video and buffering tuned for slow connections.
+
+- Developed and maintained features for a CodeIgniter 3 / MySQL e-learning platform: courses and lessons, cart and checkout, payments, certificates, exams, forum, and admin reporting.
+- Integrated Bunny.net Stream for HLS adaptive-bitrate video (encode webhook, per-lesson local / YouTube / Bunny source migration) and added client-side network detection and adaptive buffering for slow connections.
+
+#### Motorcycle Repair Quotation (role: Full Stack Developer)
+
+Type: Quotation · Workshop. Stack: React, TypeScript, Express, MongoDB.
+
+Role-based quotations and job tracking for a repair shop, with parts price suggestions and PDF output.
+
+- Built a role-based quotation and job-tracking web app (React, TypeScript, MUI, Node.js/Express, MongoDB) with parts price suggestions by brand/model/year, categorized image uploads, Puppeteer PDF generation, Thai i18n, and mobile-first layouts.
+
+## Stack
+
+- Languages: TypeScript, JavaScript, PHP, Python, SQL
+- Backend: Node.js, Express, NestJS, Fastify, Prisma, Magento, CodeIgniter, REST APIs, job queues
+- Frontend: React, Vite, Tailwind CSS, Material UI, Expo / React Native, PWA (offline-first)
+- Data: PostgreSQL, SQL Server, MongoDB, MySQL, vector databases
+- Infrastructure: Docker, Linux, Nginx / Apache, CI/CD, Grafana, Vault
+- Integration: SAP, payment gateways, multi-chain Web3, Kerry Express, Zebra label printing (ZPL)
+
+## AI and automation
+
+- LLMs and chatbots: OpenAI, Gemini and Claude APIs; support bots for web chat, LINE and WhatsApp.
+- RAG and prompting: Document QA, semantic search, embeddings; Thai-language prompt design.
+- Agents and MCP: Tool-using agents (planner/reviewer loop), MCP integrations, Claude Code skills, hooks and subagents.
+- Realtime avatar: Lip-synced avatars over WebSocket, serverless GPU inference (Modal), 3D Gaussian prototyping.
+- Voice AI: Realtime voice AI (Gemini Live), speech-to-text, text-to-speech.
+- AI video and media: ComfyUI pipelines, AI voice, talking-presenter video, Remotion-based video production.
+- Automation and tooling: n8n, local LLMs, AI-assisted development (Claude Code, Copilot, Cursor).
+
+## Education
+
+B.Sc. Modern Management and Information Technology, College of Arts, Media and Technology, Chiang Mai University, 2015 to 2019

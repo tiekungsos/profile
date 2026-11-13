@@ -4,10 +4,6 @@
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
-  const store = {
-    get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
-    set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* storage blocked */ } }
-  };
   const reduce = matchMedia("(prefers-reduced-motion: reduce)");
   const narrow = matchMedia("(max-width: 980px)");
   const pinQ = matchMedia("(min-width: 981px) and (min-height: 861px)");
@@ -15,7 +11,7 @@
   const root = document.documentElement;
 
   const param = new URLSearchParams(location.search).get("lang");
-  let lang = [param, store.get("lang")].find((v) => v === "en" || v === "th") || "en";
+  let lang = [param, document.documentElement.lang].find((v) => v === "en" || v === "th") || "en";
   const L = (o) => o[lang];
   const path = (o, p) => p.split(".").reduce((a, k) => (a ? a[k] : undefined), o);
   const U = (k) => path(S.ui, k);
@@ -396,7 +392,7 @@
   document.addEventListener("click", (e) => {
     const t = e.target;
     const lg = t.closest("[data-lang]");
-    if (lg) { lang = lg.dataset.lang; store.set("lang", lang); renderAll(); frame(); return; }
+    if (lg) { lang = lg.dataset.lang; try { history.replaceState(null, "", (lang === "th" ? "/th/" : "/") + location.hash); } catch (e) { /* file: urls */ } renderAll(); frame(); return; }
     const g = t.closest("[data-go]");
     if (g) { e.preventDefault(); go(g.dataset.go); return; }
     const f = t.closest("[data-filter]");
