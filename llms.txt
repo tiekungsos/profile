@@ -2,7 +2,7 @@
 
 > Senior Full Stack Developer in Bangkok, Thailand. 8+ years building warehouse (WMS) and SAP-integrated logistics systems, enterprise e-commerce, Web3 payment gateways, real-time platforms and production AI. Open to senior roles and consulting.
 
-I build the systems that move goods, money and conversations: warehouse and SAP integration, Web3 payments, and production AI. Based in Bangkok, Thailand. Open to senior roles and consulting.
+I build the systems behind the business. From warehouse floors and Web3 payments to real-time AI. Based in Bangkok, Thailand. Open to senior roles and consulting.
 
 ## Pages
 - [Portfolio (English)](https://profile-theta-amber-40.vercel.app/): Profile, 15 project records with what was built, stack and capabilities.
@@ -16,5 +16,4 @@ I build the systems that move goods, money and conversations: warehouse and SAP 
 - GitHub: https://github.com/tiekungsos
 
 ## Notes
-- The demo order flow on the home page (DEMO-0001) is synthetic and is not client data.
-- The 3D crates on the page are illustrations; module names are intentionally not shown.
+- Project artwork is an original conceptual illustration, not client screens or data.

@@ -11,17 +11,29 @@ window.SITE = {
       th: "Senior Full Stack Developer ในกรุงเทพฯ: ระบบคลังสินค้า การเชื่อมต่อ SAP ระบบชำระเงิน Web3 และ AI ที่ใช้งานจริง"
     },
     skip: { en: "Skip to records", th: "ข้ามไปที่รายการ" },
-    mark: { en: "Portfolio", th: "Portfolio" },
+    mark: { en: "Independent portfolio", th: "เว็บไซต์ผลงาน" },
+    navWork: { en: "Selected work", th: "ผลงานเด่น" },
+    navAbout: { en: "About", th: "เกี่ยวกับผม" },
+    letsTalk: { en: "Let’s talk", th: "คุยกันครับ" },
+    viewWork: { en: "Explore my work", th: "ดูผลงานของผม" },
+    whereShort: { en: "BANGKOK", th: "กรุงเทพฯ" },
+    careerLink: { en: "8+ years. A few things I’ve built.", th: "8+ ปี กับผลงานที่ผมสร้าง" },
+    selectedTitle: { en: "A selection of my work", th: "ส่วนหนึ่งของผลงาน" },
+    allProjects: { en: "All projects", th: "ดูทุกโปรเจกต์" },
+    illustrationNote: { en: "Original system illustrations. No client screens or data.", th: "ภาพประกอบแนวคิดของระบบ ไม่ใช่หน้าจอหรือข้อมูลลูกค้า" },
+    contactEyebrow: { en: "Have something in mind?", th: "มีโปรเจกต์ที่อยากทำไหมครับ" },
+    footerNote: { en: "Built with care. Based in Bangkok.", th: "ใส่ใจทุกรายละเอียด จากกรุงเทพฯ" },
+    backTop: { en: "Back to top ↑", th: "กลับด้านบน ↑" },
     langLabel: { en: "Language", th: "ภาษา" },
-    navRecords: { en: "Records", th: "รายการ" },
+    navRecords: { en: "Experience & projects", th: "ประสบการณ์และผลงาน" },
     navContact: { en: "Contact", th: "ติดต่อ" },
     email: { en: "Email me", th: "ส่งอีเมลหาผม" },
     resume: { en: "Résumé (PDF)", th: "Résumé (PDF)" },
     role: { en: "Senior Full Stack Developer", th: "Senior Full Stack Developer" },
     where: { en: "Bangkok, Thailand", th: "กรุงเทพฯ ประเทศไทย" },
     pitch: {
-      en: "I build the systems that move goods, money and conversations: warehouse and SAP integration, Web3 payments, and production AI.",
-      th: "ผมสร้างระบบที่ขับเคลื่อนสินค้า เงิน และบทสนทนา ตั้งแต่ระบบคลังสินค้าและการเชื่อมต่อ SAP ระบบชำระเงิน Web3 ไปจนถึง AI ที่ใช้งานจริง"
+      en: "I build the systems behind the business. From warehouse floors and Web3 payments to real-time AI.",
+      th: "ผมสร้างระบบเบื้องหลังธุรกิจ ตั้งแต่งานคลังสินค้าและการเชื่อมต่อ SAP ระบบชำระเงิน Web3 ไปจนถึง AI ที่โต้ตอบได้แบบ real-time"
     },
     photo: { en: "Photo", th: "รูปถ่าย" },
     photoAlt: { en: "Portrait of Thanapon Pruektan", th: "ภาพถ่ายของ Thanapon Pruektan" },
@@ -30,7 +42,7 @@ window.SITE = {
     openTo: { en: "Open to senior roles and consulting", th: "เปิดรับตำแหน่ง Senior และงานที่ปรึกษา" },
     openAll: { en: "Open all", th: "เปิดทั้งหมด" },
     closeAll: { en: "Close all", th: "ปิดทั้งหมด" },
-    count: { en: "{n} of {m} records", th: "{n} จาก {m} รายการ" },
+    count: { en: "{n} / {m} projects", th: "{n} / {m} โปรเจกต์" },
     pending: { en: "Pending", th: "รอดำเนินการ" },
     processing: { en: "Processing", th: "กำลังประมวลผล" },
     posted: { en: "Posted", th: "โพสต์แล้ว" },
@@ -45,7 +57,7 @@ window.SITE = {
     legendProcessing: { en: "Processing", th: "กำลังประมวลผล" },
     legendPosted: { en: "Posted", th: "โพสต์แล้ว" },
 
-    profileTitle: { en: "Profile", th: "โปรไฟล์" },
+    profileTitle: { en: "From architecture to production.", th: "ตั้งแต่ออกแบบ จนถึงใช้งานจริง" },
     modelNote: {
       en: "Illustration: 20 crates for the 20 domain modules of Bizstock WMS. Module names are not shown.",
       th: "ภาพประกอบ: 20 กล่อง แทน 20 โมดูลโดเมนของ Bizstock WMS (ไม่ระบุชื่อโมดูล)"
@@ -53,10 +65,10 @@ window.SITE = {
     ledgerTitle: { en: "Totals from my records", th: "ตัวเลขจากรายการของผม" },
     ledgerCols: { metric: { en: "Measure", th: "ตัวชี้วัด" }, value: { en: "Value", th: "ค่า" }, source: { en: "Source record", th: "รายการต้นทาง" } },
 
-    recordsTitle: { en: "Records", th: "รายการ" },
+    recordsTitle: { en: "Experience & projects", th: "ประสบการณ์และผลงาน" },
     recordsLead: {
-      en: "Every project is a record. Open one to read what I built; pick a stack term to see where it appears.",
-      th: "ทุกโปรเจกต์คือหนึ่งรายการ เปิดดูว่าผมสร้างอะไร หรือเลือกคำใน stack เพื่อดูว่าใช้ที่ไหนบ้าง"
+      en: "The work, the context, and my part in it. Open a project for details, or filter by technology.",
+      th: "ผลงาน บริบท และบทบาทของผม เปิดแต่ละโปรเจกต์เพื่ออ่านรายละเอียด หรือกรองตามเทคโนโลยี"
     },
     cols: {
       no: { en: "No.", th: "ลำดับ" },
@@ -67,7 +79,7 @@ window.SITE = {
     },
     filterLabel: { en: "Filter", th: "ตัวกรอง" },
     filterClear: { en: "Clear filter", th: "ล้างตัวกรอง" },
-    filterNone: { en: "Showing all records", th: "แสดงทุกรายการ" },
+    filterNone: { en: "All technologies", th: "ทุกเทคโนโลยี" },
     open: { en: "Open", th: "เปิด" },
     close: { en: "Close", th: "ปิด" },
     linked: { en: "Linked record", th: "รายการที่เชื่อมกัน" },
@@ -85,7 +97,7 @@ window.SITE = {
       th: "วิทยาลัยศิลปะ สื่อ และเทคโนโลยี มหาวิทยาลัยเชียงใหม่ พ.ศ. 2558 ถึง 2562"
     },
 
-    contactTitle: { en: "Post a message", th: "ส่งข้อความถึงผม" },
+    contactTitle: { en: "Let’s build something useful.", th: "มาสร้างสิ่งที่ใช้งานได้จริงด้วยกัน" },
     contactLead: {
       en: "I'm open to senior full-stack roles and to consulting on warehouse systems, SAP integration and AI. Email is fastest.",
       th: "ผมเปิดรับตำแหน่ง Senior Full Stack และงานที่ปรึกษาด้านระบบคลังสินค้า การเชื่อมต่อ SAP และ AI ส่งอีเมลมาได้เลย เป็นช่องทางที่เร็วที่สุด"

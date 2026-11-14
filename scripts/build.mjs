@@ -25,7 +25,7 @@ function prerender(lang, template) {
   const tmp = join(root, `.ssr-${lang}.html`);
   const pre = `<script>delete window.IntersectionObserver;window.setTimeout=function(){return 0};window.requestAnimationFrame=function(){return 0};</script>`;
   const page = template
-    .replace("<!--SEO-->", pre)
+    .replace("<!--SEO-->", seo(lang) + pre)
     .replace(/<link[^>]*fonts\.g[^>]*>\n?/g, "")
     .replace(/<script type="module"[^>]*><\/script>\n?/, "");
   writeFileSync(tmp, page);
@@ -33,7 +33,7 @@ function prerender(lang, template) {
     const out = execFileSync(CHROME, ["--headless=new", "--disable-gpu", "--no-first-run", `--user-data-dir=${join(root, ".ssr-profile")}`, "--window-size=800,900", "--dump-dom", `${pathToFileURL(tmp).href}?lang=${lang}`], { maxBuffer: 64 * 1024 * 1024, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] });
     const m = out.match(/<body[^>]*>([\s\S]*)<\/body>/);
     if (!m) throw new Error("no body in dump");
-    return m[1].replace(/<script[\s\S]*?<\/script>/g, "").trim();
+    return m[1].replace(/<script[\s\S]*?<\/script>/g, "").replace(/[ \t]+$/gm, "").trim();
   } finally {
     rmSync(tmp, { force: true });
     rmSync(join(root, ".ssr-profile"), { recursive: true, force: true });
@@ -111,7 +111,7 @@ function seo(lang) {
     `<meta property="og:image" content="${SITE_URL}/assets/og-image.png">`,
     `<meta property="og:image:width" content="1200">`,
     `<meta property="og:image:height" content="630">`,
-    `<meta property="og:image:alt" content="Thanapon Pruektan, Senior Full Stack Developer: a six-stage document flow from receiving to support">`,
+    `<meta property="og:image:alt" content="Thanapon Pruektan, Senior Full Stack Developer: selected warehouse, Web3 payment and AI projects">`,
     `<meta property="profile:first_name" content="Thanapon">`,
     `<meta property="profile:last_name" content="Pruektan">`,
     `<meta name="twitter:card" content="summary_large_image">`,
@@ -128,9 +128,10 @@ const absolutize = (html) => html.replace(/\b(href|src)="(?!(?:https?:|mailto:|d
 
 for (const lang of ["en", "th"]) {
   const body = prerender(lang, template);
+  if ((body.match(/class="rec(?: |")/g) || []).length !== records.length) throw new Error(`${lang}: incomplete prerender`);
   const head = template.match(/<head>([\s\S]*?)<\/head>/)[1].replace("<!--SEO-->", seo(lang));
   const tail = template.match(/<\/main>[\s\S]*?<footer[\s\S]*?<\/footer>([\s\S]*?)<\/body>/);
-  const scripts = (template.match(/<script src="[^"]*lenis[^"]*"><\/script>[\s\S]*?(?=<\/body>)/) || [""])[0];
+  const scripts = (template.match(/<script src="content\.js"><\/script>[\s\S]*?(?=<\/body>)/) || [""])[0];
   const html = absolutize(`<!doctype html>\n<html lang="${lang}">\n<head>${head}</head>\n<body>\n${body}\n${scripts}</body>\n</html>\n`);
   if (lang === "en") writeFileSync(join(root, "index.html"), html);
   else { mkdirSync(join(root, "th"), { recursive: true }); writeFileSync(join(root, "th", "index.html"), html); }
@@ -184,8 +185,7 @@ ${summary}
 - GitHub: ${S.github}
 
 ## Notes
-- The demo order flow on the home page (DEMO-0001) is synthetic and is not client data.
-- The 3D crates on the page are illustrations; module names are intentionally not shown.
+- Project artwork is an original conceptual illustration, not client screens or data.
 `);
 
 const lines = [];

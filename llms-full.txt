@@ -1,6 +1,6 @@
 # Thanapon Pruektan: Senior Full Stack Developer
 
-> I build the systems that move goods, money and conversations: warehouse and SAP integration, Web3 payments, and production AI. Based in Bangkok, Thailand. Open to senior roles and consulting.
+> I build the systems behind the business. From warehouse floors and Web3 payments to real-time AI. Based in Bangkok, Thailand. Open to senior roles and consulting.
 
 Contact: thanapon.pruektan@gmail.com | LinkedIn https://www.linkedin.com/in/thanapon-pruektan-19ba03146/ | GitHub https://github.com/tiekungsos
 Canonical page: https://profile-theta-amber-40.vercel.app/ (Thai: https://profile-theta-amber-40.vercel.app/th/)
